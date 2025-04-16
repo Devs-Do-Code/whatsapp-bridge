@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "shubh_whatsapp"
+version = "0.1.0"
+description = "Python wrapper for interacting with WhatsApp via the whatsapp-mcp Go bridge."
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.8" # Increased requirement for Pathlib and other features
+authors = [
+    { name = "Shubh", email = "tanishkaishubh@gmail.com" },
+]
+keywords = ["whatsapp", "api", "unofficial", "wrapper", "mcp"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License", # Choose your license
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Operating System :: OS Independent", # Aim for this, but Go bridge has OS specifics
+    "Topic :: Communications :: Chat",
+]
+
+dependencies = [
+    "requests>=2.25.0", # For API calls
+]
+
+# Optional: Define entry points for command-line scripts
+# [project.scripts]
+# whatsapp-setup = "shubh_whatsapp.client:setup_cli" # Example if you add a CLI setup function
+
+[project.urls]
+Homepage = "https://github.com/Tanishk/shubh_whatsapp" # Link to your repo
+Repository = "https://github.com/Tanishk/shubh_whatsapp"
