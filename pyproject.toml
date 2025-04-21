@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "whatsapp-bridge"
+version = "0.1.0"
+description = "A Python library for interacting with WhatsApp Reverse API, enabling personal message sending, receiving, and media handling."
+readme = "README.md"
+license = { text = "MPL-2.0" }
+requires-python = ">=3.8"
+authors = [
+    { name = "DevsDoCode"},
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Operating System :: OS Independent",
+    "Topic :: Communications :: Chat",
+]
+
+dependencies = [
+    "requests>=2.25.0",
+]
+
+keywords = ["whatsapp-bridge", "whatsapp", "api", "reverse-engineering", "messaging", "bot"]
+
+[project.urls]
+Homepage = "https://github.com/Devs-Do-Code/whatsapp-bridge"
+Repository = "https://github.com/Devs-Do-Code/whatsapp-bridge"
+YouTube = "https://www.youtube.com/@DevsDoCode"
+Instagram = "https://www.instagram.com/sree.shades_/"
+Twitter = "https://x.com/Anand_Sreejan"
+Telegram = "https://t.me/devsdocode"
+Discord = "https://discord.com/invite/4gGcqsWWde"
+LinkedIn = "https://www.linkedin.com/in/developer-sreejan/"
+GitHub = "https://github.com/SreejanPersonal"
+
+[tool.setuptools.packages.find]
+where = ["src"]
