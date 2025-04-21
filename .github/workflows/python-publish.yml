@@ -1,0 +1,35 @@
+# This workflow builds and publishes the Python package to PyPI when a release tag is created.
+
+    name: Publish Python Package
+
+    on:
+      push:
+        tags:
+          - 'v*.*.*'
+
+    jobs:
+      deploy:
+        runs-on: ubuntu-latest
+
+        permissions:
+          id-token: write
+
+        steps:
+        - name: Checkout repository
+          uses: actions/checkout@v4
+
+        - name: Set up Python
+          uses: actions/setup-python@v5
+          with:
+            python-version: '3.x'
+
+        - name: Install dependencies
+          run: |
+            python -m pip install --upgrade pip
+            pip install build twine # Install build tools
+
+        - name: Build package
+          run: python -m build
+
+        - name: Publish package to PyPI
+          uses: pypa/gh-action-pypi-publish@release/v1

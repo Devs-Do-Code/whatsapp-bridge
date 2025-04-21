@@ -1,5 +1,3 @@
-
-# Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
 *$py.class
@@ -64,10 +62,9 @@ venv.bak/
 *.swo
 *~
 
-# Data directory for this package (users should manage this)
-# Might want to keep this commented out if you want example data dir in repo
-# .shubh_whatsapp_data/
-# ShubhWhatsApp/ # Windows default
-
 # Downloaded media (definitely ignore)
 downloaded_media/
+bin/
+Data/
+.windsurfrules
+.clinerules
